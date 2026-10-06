@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn with clarity and move forward with confidence. Explore Haseeb Swati's mentorship, writing workshops, and Pakistan Affairs study resources."
+    />
+    <meta name="theme-color" content="#233237" />
+    <title>Haseeb Swati — Learn with clarity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20261006-4" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="./main.js?v=20261006-2"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="water-stage" aria-hidden="true">
+      <canvas id="water-canvas"></canvas>
+      <div class="water-shade"></div>
+      <svg class="background-ribbons" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="ribbon-gold" x1="0" y1="0" x2="1" y2=".3">
+            <stop offset="0" stop-color="#c68b39" stop-opacity="0" />
+            <stop offset=".34" stop-color="#e7bd68" stop-opacity=".72" />
+            <stop offset=".55" stop-color="#fff0b0" stop-opacity=".95" />
+            <stop offset=".76" stop-color="#bd8538" stop-opacity=".48" />
+            <stop offset="1" stop-color="#d7a94f" stop-opacity="0" />
+          </linearGradient>
+          <filter id="ribbon-glow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="5" result="blur" />
+            <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+          </filter>
+        </defs>
+        <path class="ribbon-glow" d="M-80 650 C230 550 390 890 690 865 C985 839 1070 602 1360 677 C1574 733 1659 851 2000 608" />
+        <path class="ribbon-line ribbon-line-primary" d="M-80 650 C230 550 390 890 690 865 C985 839 1070 602 1360 677 C1574 733 1659 851 2000 608" />
+        <path class="ribbon-line ribbon-line-secondary" d="M-80 704 C220 610 402 930 706 905 C1010 880 1095 650 1379 716 C1590 765 1680 890 2000 661" />
+        <path class="ribbon-line ribbon-line-fine" d="M-80 614 C236 518 391 854 678 829 C965 805 1047 570 1342 643 C1560 697 1644 810 2000 574" />
+        <path class="ribbon-line ribbon-line-fine" d="M-80 742 C231 649 423 966 724 938 C1024 911 1119 686 1398 747 C1607 793 1690 917 2000 704" />
+      </svg>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Haseeb Swati home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Haseeb<span class="brand-light">Swati</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link nav-with-plus" href="#programs"><span aria-hidden="true">＋</span> Programs</a>
+        <a class="nav-link nav-with-plus" href="#resources"><span aria-hidden="true">＋</span> Resources</a>
+        <a class="nav-link" href="#workshop">Workshop</a>
+        <a class="button button-small nav-cta" href="#workshop">Explore workshop <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Educator · Author · Mentor</p>
+          <h1 id="hero-title">Make your next<br class="desktop-break" /> step <span class="serif-accent">count.</span></h1>
+          <p class="hero-intro">
+            Clear guidance for ambitious learners. Build stronger writing, deeper understanding,
+            and the confidence to reach your goals.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#programs">Explore programs <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#about">Get to know me <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-footnote">
+            <span class="scroll-line" aria-hidden="true"></span>
+            <span>Practical learning. Lasting progress.</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-card" data-tilt>
+            <img src="./main%20image.png" alt="Haseeb Swati, educator and mentor" fetchpriority="high" />
+            <div class="portrait-caption">
+              <span class="portrait-caption-dot"></span>
+              <span>Ideas into action</span>
+              <span class="caption-index">01 / 03</span>
+            </div>
+          </div>
+        </div>
+        <a class="hero-next" href="#programs" aria-label="Scroll to programs"><span>Scroll to explore</span><span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="showcase-section" aria-label="Featured study guide and learning quotes">
+        <div class="showcase-heading">
+          <p class="eyebrow">A little inspiration for the way</p>
+          <h2>Thoughts &amp; tools<br />for your <span class="serif-accent">next step.</span></h2>
+        </div>
+        <div class="showcase-slider" aria-roledescription="carousel" aria-label="Learning inspiration and featured resources">
+          <div class="showcase-track" aria-live="polite">
+            <article class="showcase-slide showcase-book" data-showcase-slide aria-label="Featured study guide">
+              <div class="showcase-book-visual"><img src="./book%20image%203.png" alt="Pakistan Affairs at Your Fingertips study guide cover" loading="lazy" /></div>
+              <div class="showcase-slide-copy">
+                <p class="eyebrow">Featured study guide · CSS &amp; PMS</p>
+                <h3>Pakistan Affairs<br /><span class="serif-accent">at your fingertips.</span></h3>
+                <p>A focused companion for building context and confidence as you prepare.</p>
+                <a class="showcase-link" href="#resources">Explore the study guide <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+            <article class="showcase-slide showcase-quote" data-showcase-slide aria-label="Learning quote 1 of 3" hidden>
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <blockquote>Small, focused steps can carry you further than waiting for a perfect start.</blockquote>
+              <p class="quote-attribution">A thought for the learning journey <span class="quote-rule"></span></p>
+            </article>
+            <article class="showcase-slide showcase-quote" data-showcase-slide aria-label="Learning quote 2 of 3" hidden>
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <blockquote>Every good question is the beginning of a deeper understanding.</blockquote>
+              <p class="quote-attribution">A thought for curious minds <span class="quote-rule"></span></p>
+            </article>
+            <article class="showcase-slide showcase-quote" data-showcase-slide aria-label="Learning quote 3 of 3" hidden>
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <blockquote>Write to discover what you think; revise to help someone else see it.</blockquote>
+              <p class="quote-attribution">A thought for thoughtful writers <span class="quote-rule"></span></p>
+            </article>
+          </div>
+          <div class="showcase-controls" aria-label="Featured resource and quote controls">
+            <div class="showcase-pagination">
+              <span class="showcase-index"><span id="showcase-current">01</span><span class="pagination-divider">/</span>04</span>
+              <div class="showcase-dots" role="group" aria-label="Choose a slide">
+                <button class="showcase-dot is-active" type="button" aria-label="Show featured study guide" aria-pressed="true" data-showcase-to="0"></button>
+                <button class="showcase-dot" type="button" aria-label="Show learning quote 1" aria-pressed="false" data-showcase-to="1"></button>
+                <button class="showcase-dot" type="button" aria-label="Show learning quote 2" aria-pressed="false" data-showcase-to="2"></button>
+                <button class="showcase-dot" type="button" aria-label="Show learning quote 3" aria-pressed="false" data-showcase-to="3"></button>
+              </div>
+            </div>
+            <div class="showcase-arrows">
+              <button class="showcase-arrow" type="button" aria-label="Previous slide" data-showcase-direction="-1">←</button>
+              <button class="showcase-arrow" type="button" aria-label="Next slide" data-showcase-direction="1">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Areas of focus">
+        <span class="proof-label">A thoughtful approach to</span>
+        <span class="proof-item">Mentorship</span>
+        <span class="proof-divider" aria-hidden="true"></span>
+        <span class="proof-item">Essay writing</span>
+        <span class="proof-divider" aria-hidden="true"></span>
+        <span class="proof-item">Pakistan Affairs</span>
+        <span class="proof-divider" aria-hidden="true"></span>
+        <span class="proof-item">Exam readiness</span>
+      </section>
+
+      <section class="section programs-section" id="programs" aria-labelledby="programs-title">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow">01 — Learn with purpose</p>
+            <h2 id="programs-title">A clearer path<br />to <span class="serif-accent">what’s next.</span></h2>
+          </div>
+          <p class="section-description">
+            Thoughtful, practical support designed to help you understand more, write with
+            confidence, and keep moving forward.
+          </p>
+        </div>
+        <div class="program-grid">
+          <article class="program-card" data-reveal>
+            <div class="program-top"><span class="program-number">01</span><span class="program-icon" aria-hidden="true">↗</span></div>
+            <p class="card-kicker">Build your foundation</p>
+            <h3>Mentorship<br />program</h3>
+            <p>Structured guidance, clear goals, and a supportive learning plan tailored to your next step.</p>
+            <a class="card-link" href="#contact">Explore mentorship <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="program-card program-card-featured" data-reveal>
+            <div class="program-top"><span class="program-number">02</span><span class="program-icon" aria-hidden="true">↗</span></div>
+            <p class="card-kicker">Find the right words</p>
+            <h3>The art of<br />essay writing</h3>
+            <p>Learn to shape a strong argument, organise ideas, and write essays with purpose and clarity.</p>
+            <a class="card-link" href="#resources">View the course outline <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="program-card" data-reveal>
+            <div class="program-top"><span class="program-number">03</span><span class="program-icon" aria-hidden="true">↗</span></div>
+            <p class="card-kicker">Prepare with confidence</p>
+            <h3>Pakistan Affairs<br />study guide</h3>
+            <p>A focused resource to help CSS and PMS aspirants make sense of key topics and context.</p>
+            <a class="card-link" href="#resources">Discover the book <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="about-image book-carousel" data-book-carousel data-reveal role="region" aria-roledescription="carousel" aria-label="Pakistan Affairs book photos" tabindex="0">
+          <div class="book-carousel-track" aria-live="polite">
+            <figure class="book-slide book-slide-angle is-active" data-book-slide aria-label="Book image 1 of 2">
+              <img src="./book%20image%201.png" alt="Angled Pakistan Affairs book cover" loading="eager" />
+            </figure>
+            <figure class="book-slide book-slide-cover" data-book-slide aria-label="Book image 2 of 2" hidden>
+              <img src="./book%20image%202.png" alt="Pakistan Affairs book cover" loading="eager" />
+            </figure>
+          </div>
+          <div class="book-carousel-overlay">
+            <div class="book-carousel-caption">
+              <span class="image-note">Learning is a journey, not a shortcut.</span>
+              <span class="book-carousel-index"><span data-book-current>01</span> / 02</span>
+            </div>
+            <div class="book-carousel-footer">
+              <div class="book-carousel-controls" role="group" aria-label="Book photo controls">
+                <button class="book-carousel-arrow" type="button" aria-label="Previous book photo" data-book-direction="-1">←</button>
+                <div class="book-carousel-dots" role="group" aria-label="Choose a book photo">
+                  <button class="book-carousel-dot is-active" type="button" aria-label="Show angled book cover" aria-pressed="true" data-book-to="0"></button>
+                  <button class="book-carousel-dot" type="button" aria-label="Show book cover" aria-pressed="false" data-book-to="1"></button>
+                </div>
+                <button class="book-carousel-arrow" type="button" aria-label="Next book photo" data-book-direction="1">→</button>
+              </div>
+              <a class="button button-small book-buy-link" href="https://shop.nearpeer.org/products/pakistan-affairs-at-your-fingertips" target="_blank" rel="noopener noreferrer">Buy the book <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="book-carousel-progress" aria-hidden="true"><span></span></span>
+          </div>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow">02 — A little about me</p>
+          <h2 id="about-title">Good teaching<br />starts with <span class="serif-accent">listening.</span></h2>
+          <p class="about-body">
+            I’m Haseeb Swati. I help learners turn big ambitions into steady, achievable progress.
+            My approach pairs subject knowledge with the practical habits that make learning stick.
+          </p>
+          <p class="about-body">
+            Whether you’re strengthening your writing or preparing for a competitive exam, the aim
+            is simple: make every study session more focused and every next step more manageable.
+          </p>
+          <a class="text-link about-link" href="#contact">Let’s talk about your goals <span aria-hidden="true">→</span></a>
+          <div class="about-signoff"><span class="signoff-line"></span><span>Learn with clarity. Move with confidence.</span></div>
+        </div>
+      </section>
+
+      <section class="section resources-section" id="resources" aria-labelledby="resources-title">
+        <div class="section-heading resources-heading" data-reveal>
+          <div>
+            <p class="eyebrow">03 — The learning library</p>
+            <h2 id="resources-title">Useful things<br />to <span class="serif-accent">start with.</span></h2>
+          </div>
+          <p class="section-description">
+            A small collection of course guides and study materials to help you take your next step.
+          </p>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card book-resource">
+            <div class="book-photo-visual"><img src="./book%20main.jpeg" alt="A student studying with the Pakistan Affairs book" loading="lazy" /></div>
+            <div class="resource-meta"><span class="resource-type">Book · CSS &amp; PMS</span><span class="resource-arrow" aria-hidden="true">↗</span></div>
+            <h3>Pakistan Affairs<br />at Your Fingertips</h3>
+            <a class="resource-action" href="https://shop.nearpeer.org/products/pakistan-affairs-at-your-fingertips" target="_blank" rel="noopener noreferrer">Buy the book <span aria-hidden="true">↗</span></a>
+          </article>
+          <a class="resource-card" href="./COURSE%20OUTLINE%20-%20Mentorship%20Program.pdf" target="_blank" rel="noopener">
+            <div class="resource-art mentorship-art" aria-hidden="true"><span>Mentorship</span><span>Program</span><span class="art-mark">↗</span></div>
+            <div class="resource-meta"><span class="resource-type">Course outline</span><span class="resource-arrow" aria-hidden="true">↗</span></div>
+            <h3>Mentorship<br />Program</h3>
+            <span class="resource-action">Open course outline <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="resource-card" href="./Course%20Outline%20-%20The%20Art%20of%20Essay%20Writing%202.pdf" target="_blank" rel="noopener">
+            <div class="resource-art writing-art" aria-hidden="true"><span>THE</span><span>ART OF</span><span>WRITING<span class="writing-period">.</span></span></div>
+            <div class="resource-meta"><span class="resource-type">Course outline</span><span class="resource-arrow" aria-hidden="true">↗</span></div>
+            <h3>The Art of<br />Essay Writing</h3>
+            <span class="resource-action">Open course outline <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="workshop-section" id="workshop" aria-labelledby="workshop-title">
+        <div class="workshop-heading" data-reveal>
+          <p class="eyebrow"><span class="status-dot"></span> A live 10-day workshop</p>
+          <h2 id="workshop-title">Be the next<br /><span class="serif-accent">topper.</span></h2>
+          <p class="workshop-intro">
+            Unlock your potential with a comprehensive preparation roadmap built to transform
+            your CSS, PMS, and CCE Sindh exam strategy.
+          </p>
+          <div class="workshop-highlights">
+            <span><span aria-hidden="true">✳</span> 10 live days</span>
+            <span><span aria-hidden="true">↗</span> Zero to mastery</span>
+            <span><span aria-hidden="true">✎</span> Study materials included</span>
+          </div>
+        </div>
+
+        <div class="workshop-glass" data-reveal>
+          <div class="workshop-program">
+            <div class="workshop-block-heading">
+              <span class="workshop-block-icon" aria-hidden="true">✦</span>
+              <div><p class="card-kicker">From preparation to performance</p><h3>What we’ll cover</h3></div>
+            </div>
+            <p class="workshop-subjects">All compulsory and optional subjects — from zero to mastery.</p>
+            <div class="workshop-topic-grid">
+              <article class="workshop-topic">
+                <span class="topic-symbol" aria-hidden="true">⌕</span>
+                <div><h4>Brainstorming techniques</h4><p>PESTEL, LEVEL, SWOT, keywords, and CSS Guide’s special analysis.</p></div>
+              </article>
+              <article class="workshop-topic">
+                <span class="topic-symbol" aria-hidden="true">⌁</span>
+                <div><h4>Live past-paper analysis</h4><p>Decode recurring trends, high-yield topics, and examiner expectations.</p></div>
+              </article>
+              <article class="workshop-topic">
+                <span class="topic-symbol" aria-hidden="true">▤</span>
+                <div><h4>Paper-attempting techniques</h4><p>Improve paper presentation, structure, and formatting to maximise your score potential.</p></div>
+              </article>
+              <article class="workshop-topic">
+                <span class="topic-symbol" aria-hidden="true">✎</span>
+                <div><h4>Answering strategy</h4><p>Construct precise, impact-driven answers for every subject.</p></div>
+              </article>
+              <article class="workshop-topic">
+                <span class="topic-symbol" aria-hidden="true">↑</span>
+                <div><h4>Topper’s mindset</h4><p>Think, analyse, and approach exam questions like a top ranker.</p></div>
+              </article>
+              <article class="workshop-topic">
+                <span class="topic-symbol" aria-hidden="true">◷</span>
+                <div><h4>Time management</h4><p>Allocate time effectively during your preparation and exam hours.</p></div>
+              </article>
+              <article class="workshop-topic">
+                <span class="topic-symbol" aria-hidden="true">✧</span>
+                <div><h4>High-scoring tactics</h4><p>Use practical methods to improve marks and stand out to evaluators.</p></div>
+              </article>
+            </div>
+            <div class="workshop-notes">
+              <span class="workshop-notes-icon" aria-hidden="true">▧</span>
+              <p><strong>Exclusive study material included.</strong> Get comprehensive master notes, summaries, and reference materials developed from years of personal study — included in the workshop fee, with no hidden costs.</p>
+            </div>
+          </div>
+
+          <aside class="workshop-pricing" aria-label="Workshop investment and pricing">
+            <p class="card-kicker">Your next step starts here</p>
+            <h3>Invest in your<br />preparation.</h3>
+            <p class="workshop-daily-rate">Just <strong>Rs 430</strong> per day</p>
+            <div class="workshop-price-option workshop-price-early">
+              <span class="price-label">Early bird <span>First 30 students</span></span>
+              <strong>Rs 4,400</strong>
+            </div>
+            <div class="workshop-price-option">
+              <span class="price-label">Standard fee <span>After early-bird seats fill</span></span>
+              <strong>Rs 6,000</strong>
+            </div>
+            <p class="workshop-refund"><span aria-hidden="true">↺</span> Not satisfied with the content? Your fee is 100% refundable.</p>
+            <a class="button workshop-action" href="https://youtube.com/@haseebswati1?si=n_wAH15z5AXj5ZUt" target="_blank" rel="noopener noreferrer">
+              Visit the YouTube channel <span aria-hidden="true">↗</span>
+            </a>
+          </aside>
+        </div>
+
+        <div class="workshop-socials" aria-label="More from Haseeb Swati">
+          <p>Keep learning beyond the workshop.</p>
+          <div>
+            <a href="https://youtube.com/@haseebswati1?si=n_wAH15z5AXj5ZUt" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+            <a href="https://www.instagram.com/the_css_guide?stkn=OHpjZnBqd2Z2a3Vs" target="_blank" rel="noopener noreferrer">Instagram · The CSS Guide <span aria-hidden="true">↗</span></a>
+            <a href="https://shop.nearpeer.org/products/pakistan-affairs-at-your-fingertips" target="_blank" rel="noopener noreferrer">Buy Pakistan Affairs <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-content" data-reveal>
+          <p class="eyebrow"><span class="status-dot"></span> Your next step starts here</p>
+          <h2 id="contact-title">Let’s make it<br /><span class="serif-accent">happen.</span></h2>
+          <p>Start with the mentorship outline, or browse the study materials and course guides to find the right next step.</p>
+          <a class="button" href="./COURSE%20OUTLINE%20-%20Mentorship%20Program.pdf" target="_blank" rel="noopener">View mentorship outline <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-orbit" aria-hidden="true"><span class="orbit-ring orbit-ring-one"></span><span class="orbit-ring orbit-ring-two"></span><span class="orbit-core">HS</span><span class="orbit-label">Curiosity<br />creates momentum</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>Haseeb<span class="brand-light">Swati</span></span></a>
+      <p class="footer-note">Learning with purpose, one step at a time.</p>
+      <div class="footer-links"><a href="#home">Home</a><a href="#programs">Programs</a><a href="#resources">Resources</a><a href="#workshop">Workshop</a><a href="#contact">Get started</a></div>
+      <span class="footer-copyright">© <span id="current-year"></span> Haseeb Swati</span>
+    </footer>
+  </body>
+</html>
